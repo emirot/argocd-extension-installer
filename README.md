@@ -43,7 +43,7 @@ spec:
     spec:
       initContainers:
         - name: extension-
-          image: quay.io/argoprojlabs/argocd-extension-installer:v0.0.5@sha256:27e72f047298188e2de1a73a1901013c274c4760c92f82e6e46cd5fbd0957c6b
+          image: quay.io/argoprojlabs/argocd-extension-installer:v0.0.9@sha256:d2b43c18ac1401f579f6d27878f45e253d1e3f30287471ae74e6a4315ceb0611
           env:
           - name: EXTENSION_URL
             value: https://github.com/some-org/somerepo/releases/download/v0.0.1/extension.tar
@@ -101,7 +101,7 @@ spec:
     spec:
       initContainers:
         - name: extension
-          image: quay.io/argoprojlabs/argocd-extension-installer:v0.0.5@sha256:27e72f047298188e2de1a73a1901013c274c4760c92f82e6e46cd5fbd0957c6b
+          image: quay.io/argoprojlabs/argocd-extension-installer:v0.0.9@sha256:d2b43c18ac1401f579f6d27878f45e253d1e3f30287471ae74e6a4315ceb0611
           env:
           - name: EXTENSION_NAME
             valueFrom:
